@@ -1,0 +1,92 @@
+.container {
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.internal__container {
+    box-sizing: border-box;
+    border: 2px solid darkgrey;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.padding,
+.border,
+.margin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    border: 2px solid darkgrey;
+    background-color: white;
+}
+
+
+
+
+.padding__header-row,
+.border__header-row,
+.margin__header-row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.padding__header-name,
+.border__header-name,
+.margin__header-name {
+    position: absolute;
+    left: 20px;
+}
+
+
+
+.padding__internal-row,
+.border__internal-row,
+.margin__internal-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.padding__side,
+.border__side,
+.margin__side {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.padding__footer-row,
+.border__footer-row,
+.margin__footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+
+
+.border {
+    width: 560px;
+    background-color: lightgrey;
+}
+
+.margin {
+    width: 640px;
+    border: 2px darkgrey dashed;
+}
