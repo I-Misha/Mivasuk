@@ -1,0 +1,52 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ul {
+    list-style: none;
+    counter-reset: steps;
+  }
+  ul li {
+    counter-increment: steps;
+  }
+  ul li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: #ff6f00;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+  }
+  
+  ul ul li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: black;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+  }
+  ul ul li::before {
+    background: darkorchid;
+  }
